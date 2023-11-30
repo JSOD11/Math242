@@ -3,6 +3,7 @@
 #include <vector>
 #include <fstream>
 #include <algorithm>
+#include <iomanip>
 
 class Creature {
 public:
@@ -39,9 +40,6 @@ double calculateAverage(const std::vector<Creature>& creatures) {
     }
     return sum / creatures.size();
 }
-
-#include <iostream>
-#include <iomanip>
 
 void printProgressBar(int current, int total) {
     const int barWidth = 50;
